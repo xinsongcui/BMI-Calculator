@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>BMI Calc</title>
+    
+    <meta charset="utf-8">
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    
+<body>
+    
+    <section>
+
+        <h1>BMI Calculator</h1>
+
+	<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+	  <div class="btn-group mr-2" role="group" aria-label="First group">
+	    <button type="button" class="btn btn-success float-lg-right">Login in</button>
+	    <button type="button" class="btn btn-success float-lg-right">Sign in</button>
+	  </div>
+        </div>
+
+        <div class="input-group mt-5">
+	    <label for="usr">Enter your height </label>
+	    <input type="text" class ="form-control" id="height">
+ 
+            <select type="multiple" id="heightunits">
+                <option value="metres" selected="selected">metres</option>
+                <option value="inches">inches</option>
+            </select>
+        </div>
+  
+        <div class="input-group mt-3">
+ 	    <label for="usr">Enter your weight </label>
+            <input type="text" class ="form-control" id="weight">
+
+            <select type="multiple" id="weightunits">
+                <option value="kg" selected="selected">kilograms</option>
+                <option value="lb">pounds</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-lg btn-primary mt-5" id = "compute">Compute BMI</button>
+        
+	<div class = "mt-5">
+            <h1>Your BMI: <span id="output">?</span></h1>
+            <h2>You are: <span id="comment"> ?</span> </h2>
+        </div>
+ 	
+    </section>
+   
+    <section>
+        <div class = "mt-5" id="myDiv"></div>
+    </section>
+ 
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
